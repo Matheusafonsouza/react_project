@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import Header from './components/Header';
 
+import Image from './assets/photo.jpeg';
+
 import './App.css';
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
     return (
         <>
             <Header title="Homepage" />
+
+            <img src={Image} width="200" alt="image" />
+
             <ul>
                 {projects.map(project => (
                     <li key={project}>{project}</li>
